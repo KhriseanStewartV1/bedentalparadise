@@ -6,6 +6,7 @@ import { toast } from "sonner";
 import { Input } from "../components/ui/input";
 import { Label } from "../components/ui/label";
 import { useAuth } from "../context/AuthContext";
+import { DEMO_ADMIN_EMAIL, DEMO_ADMIN_PASSWORD } from "../lib/api";
 
 const LOGO_URL =
   "https://customer-assets.emergentagent.com/job_dental-admin-hub-2/artifacts/k715mfhv_IMG-20260424-WA0025.jpg";
@@ -13,8 +14,8 @@ const LOGO_URL =
 export default function AdminLogin() {
   const { user, login } = useAuth();
   const navigate = useNavigate();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState(DEMO_ADMIN_EMAIL);
+  const [password, setPassword] = useState(DEMO_ADMIN_PASSWORD);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -69,6 +70,11 @@ export default function AdminLogin() {
           </Link>
           <h2 className="font-display text-4xl text-paradise-navy mt-4">Welcome back</h2>
           <p className="text-paradise-slate mt-2 text-sm">Sign in to the Be Dental Paradise admin.</p>
+          <div className="mt-4 rounded-xl border border-paradise-sky/30 bg-paradise-skySoft/70 p-3 text-xs text-paradise-navy">
+            Demo email: <span className="font-semibold">{DEMO_ADMIN_EMAIL}</span>
+            <br />
+            Demo password: <span className="font-semibold">{DEMO_ADMIN_PASSWORD}</span>
+          </div>
 
           <div className="mt-8 space-y-5">
             <div>
