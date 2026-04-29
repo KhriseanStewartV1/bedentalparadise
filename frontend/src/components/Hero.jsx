@@ -3,14 +3,17 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { CalendarCheck, MessageCircle, Sparkles, Star } from "lucide-react";
 import { WHATSAPP_LINK, LOGO_URL } from "../lib/constants";
+import heroSlide1 from "../assets/images/hero-slides/hero-slide-1.jpg";
+import heroSlide2 from "../assets/images/hero-slides/hero-slide-2.png";
+import heroSlide3 from "../assets/images/hero-slides/hero-slide-3.jpg";
 
 const HERO_IMG =
   "https://images.pexels.com/photos/3845682/pexels-photo-3845682.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=940";
 
 const HERO_BG_SLIDES = [
-  "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F1352126344%2Fphoto%2Flatinx-caribbean-young-woman-with-curly-hair-smile-happy-people-beautiful-in-winter.jpg%3Fs%3D170667a%26w%3D0%26k%3D20%26c%3D2YtGiMLi2tEBhpKpuuw4LskieQBmHzz5HjQht4lmOBg%3D&f=1&nofb=1&ipt=6f3e7662503e5dc689463625b4ba088b751fda6854fa9bf3cc9acffd343ac6c5",
-  "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwitness-experts.com%2Fhubfs%2Fa-female-dentist-is-caring-for-her-male-patient.png&f=1&nofb=1&ipt=0c431ba06968055e2f90edb414df2d7aa758e982ec65908e633bd663c9877d9e",
-  HERO_IMG,
+  heroSlide1,
+  heroSlide2,
+  heroSlide3,
 ];
 
 const fade = (delay = 0) => ({
