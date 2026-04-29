@@ -1,0 +1,140 @@
+{
+  "theme": "light",
+  "archetype": "1_organic_earthy",
+  "mood": "Premium Coastal Medical, Elegant, Trustworthy, Relaxing",
+  "brand": {
+    "name": "Be Dental Paradise",
+    "logo_url": "https://customer-assets.emergentagent.com/job_fd4c3084-93f2-4c13-a781-efa00d93796b/artifacts/qfwyqrdk_Be%20dental%20paradise%20logo.jpg"
+  },
+  "colors": {
+    "background": {
+      "primary": "#F9FAFB",
+      "secondary": "#F0F9FF",
+      "white": "#FFFFFF"
+    },
+    "text": {
+      "primary": "#0F172A",
+      "secondary": "#475569",
+      "navy": "#1E3A8A"
+    },
+    "brand": {
+      "primary": "#1E3A8A",
+      "secondary": "#38BDF8",
+      "accent_yellow": "#FBBF24",
+      "accent_green": "#10B981"
+    },
+    "interactive": {
+      "button_primary_bg": "#1E3A8A",
+      "button_primary_hover": "#1E40AF",
+      "button_secondary_bg": "#FBBF24",
+      "button_secondary_hover": "#F59E0B"
+    },
+    "admin": {
+      "success": "#10B981",
+      "warning": "#FBBF24",
+      "error": "#EF4444",
+      "sidebar_bg": "#FFFFFF",
+      "table_header": "#F8FAFC"
+    }
+  },
+  "typography": {
+    "font_families": {
+      "heading": "Cormorant Garamond, serif",
+      "body": "Outfit, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "hierarchy": {
+      "h1": "text-5xl sm:text-6xl tracking-tight text-navy",
+      "h2": "text-4xl sm:text-5xl tracking-tight text-navy",
+      "h3": "text-2xl sm:text-3xl tracking-tight text-navy",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-base leading-relaxed text-slate-600",
+      "small": "text-sm text-slate-500",
+      "overline": "text-xs uppercase tracking-[0.2em] font-bold text-sky-600"
+    }
+  },
+  "spacing_and_layout": {
+    "section_padding": "py-20 sm:py-32",
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "bento_grid": "grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8",
+    "border_radius": {
+      "cards": "rounded-2xl",
+      "buttons": "rounded-full",
+      "images": "rounded-3xl"
+    },
+    "shadows": {
+      "card": "shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
+      "hover": "shadow-[0_20px_40px_rgb(0,0,0,0.08)]",
+      "glass": "shadow-[0_8px_32px_rgb(30,58,138,0.05)]"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#1E3A8A] text-white hover:bg-[#1E40AF] px-8 py-4 rounded-full transition-all duration-300 font-medium",
+      "secondary": "bg-[#FBBF24] text-white hover:bg-[#F59E0B] px-8 py-4 rounded-full transition-all duration-300 font-medium text-navy"
+    },
+    "cards": {
+      "service": "bg-white rounded-2xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-300 border border-slate-100/50",
+      "testimonial": "bg-[#F0F9FF] rounded-2xl p-8 border border-sky-100"
+    },
+    "admin_dashboard": {
+      "style": "clean, flat, dense",
+      "card": "bg-white border border-slate-200 rounded-xl p-6",
+      "table": "w-full text-left text-sm",
+      "badge_paid": "bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-full text-xs font-medium",
+      "badge_pending": "bg-amber-100 text-amber-800 px-2.5 py-0.5 rounded-full text-xs font-medium"
+    },
+    "custom_elements": {
+      "wave_divider": "Use soft SVG wave shapes in #F0F9FF or #FFFFFF to transition between sections. Do not use generic straight lines.",
+      "glass_header": "backdrop-blur-xl bg-white/80 border-b border-slate-200/50 sticky top-0 z-50"
+    }
+  },
+  "images": {
+    "hero": {
+      "url": "https://images.pexels.com/photos/4269276/pexels-photo-4269276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Contemporary dental office interior",
+      "overlay": "bg-white/20"
+    },
+    "clinic_interior": {
+      "url": "https://images.pexels.com/photos/4269361/pexels-photo-4269361.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Modern clinic interior"
+    },
+    "dentist_portrait": {
+      "url": "https://images.pexels.com/photos/31043312/pexels-photo-31043312.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "alt": "Professional confident dentist"
+    },
+    "services": {
+      "general": "https://images.unsplash.com/photo-1758600587683-d86675a2f6e9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHw0fHxiZWF1dGlmdWwlMjBzbWlsaW5nJTIwcGF0aWVudHxlbnwwfHx8fDE3NzcwNTg4NzN8MA&ixlib=rb-4.1.0&q=85",
+      "cleanings": "https://images.unsplash.com/photo-1611690061822-b707a67bfebb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwxfHxiZWF1dGlmdWwlMjBzbWlsaW5nJTIwcGF0aWVudHxlbnwwfHx8fDE3NzcwNTg4NzN8MA&ixlib=rb-4.1.0&q=85",
+      "braces": "https://images.pexels.com/photos/16961166/pexels-photo-16961166.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "whitening": "https://images.pexels.com/photos/14235194/pexels-photo-14235194.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "implants": "https://images.pexels.com/photos/6502661/pexels-photo-6502661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "pediatric": "https://images.pexels.com/photos/7800560/pexels-photo-7800560.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "emergency": "https://images.unsplash.com/photo-1629909615184-74f495363b67?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBkZW50YWwlMjBjbGluaWMlMjBpbnRlcmlvcnxlbnwwfHx8fDE3NzcwNTg4NzN8MA&ixlib=rb-4.1.0&q=85"
+    },
+    "testimonials": [
+      {
+        "url": "https://images.unsplash.com/photo-1667133295308-9ef24f71952e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBkZW50aXN0JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzc3MDU4ODczfDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Smiling patient review 1"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1645118286859-0cf9c5c784b2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwyfHxicmFjZXMlMjBzbWlsaW5nfGVufDB8fHx8MTc3NzA1ODg4OHww&ixlib=rb-4.1.0&q=85",
+        "alt": "Smiling patient review 2"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1769636930646-3d053e96f5b8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxicmFjZXMlMjBzbWlsaW5nfGVufDB8fHx8MTc3NzA1ODg4OHww&ixlib=rb-4.1.0&q=85",
+        "alt": "Smiling patient review 3"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Use pure HTML + Tailwind for the marketing pages to allow for creative layouts, overlapping elements, and soft SVG wave dividers.",
+    "Use Shadcn UI components heavily for the Admin Dashboard and the Appointment Booking Form, but customize them to fit the clean, light, elegant medical aesthetic.",
+    "Install and use 'lucide-react' for all icons (e.g., teeth, sparkles, calendars, map pins).",
+    "Install Google Fonts: 'Cormorant Garamond' (for headings) and 'Outfit' (for body text). Add them to your frontend/tailwind.config.js.",
+    "Ensure all interactive elements have 'data-testid' attributes per the testing requirements.",
+    "The admin dashboard should use a compact density, prioritizing data clarity over large typography. Use 'Outfit' font for the tables.",
+    "Avoid cartoonish design elements. Keep the tone premium, trustworthy, and relaxing, matching a high-end coastal dental clinic.",
+    "Ensure you extract and use the images from this JSON file for Hero, 7 Services, Dentist Portrait, 3 Testimonials, and Clinic Interior."
+  ]
+}

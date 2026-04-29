@@ -1,0 +1,16 @@
+.App {
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+/* Hide default scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Wave divider utility */
+.wave-divider {
+  display: block;
+  width: 100%;
+  height: 60px;
+}

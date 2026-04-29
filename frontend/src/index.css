@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,500;1,9..144,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Caveat:wght@500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+  color: #0a1a2f;
+  overflow-x: hidden;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 219 67% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 219 67% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 219 67% 11%;
+    --primary: 224 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 219 100% 96%;
+    --secondary-foreground: 219 67% 15%;
+    --muted: 219 100% 97%;
+    --muted-foreground: 220 15% 40%;
+    --accent: 198 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 30% 92%;
+    --input: 220 30% 92%;
+    --ring: 224 100% 50%;
+    --radius: 1rem;
+  }
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground; }
+  h1, h2, h3, h4, .font-display {
+    font-family: "Fraunces", serif;
+    letter-spacing: -0.02em;
+  }
+  ::selection { background: #FFD60A; color: #0A1F66; }
+}
+
+@layer components {
+  .container-x { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; }
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs uppercase tracking-[0.28em] font-bold text-paradise-blue;
+  }
+  .eyebrow::before {
+    content: "";
+    @apply inline-block w-8 h-[2px] bg-paradise-blue;
+  }
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-paradise-blue text-white hover:bg-paradise-blueDark px-7 py-3.5 rounded-full font-semibold transition-all duration-300 shadow-vibrant hover:shadow-[0_24px_50px_-8px_rgba(0,82,255,0.55)] hover:-translate-y-0.5 active:translate-y-0;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 bg-paradise-yellow text-paradise-navy hover:bg-paradise-yellowDark px-7 py-3.5 rounded-full font-semibold transition-all duration-300 shadow-[0_12px_30px_rgba(255,214,10,0.45)] hover:-translate-y-0.5;
+  }
+  .btn-whatsapp {
+    @apply inline-flex items-center gap-2 bg-paradise-green text-white hover:bg-paradise-greenDark px-7 py-3.5 rounded-full font-semibold transition-all duration-300 shadow-[0_12px_30px_rgba(0,200,150,0.45)] hover:-translate-y-0.5;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 bg-white text-paradise-navy border-2 border-paradise-navy/15 hover:border-paradise-blue hover:text-paradise-blue px-7 py-3 rounded-full font-semibold transition-all duration-300;
+  }
+  .card-elev {
+    @apply bg-white rounded-3xl shadow-soft hover:shadow-hover transition-all duration-300 border border-slate-100;
+  }
+  .glass-nav {
+    @apply backdrop-blur-xl bg-white/85 border-b border-slate-200/60;
+  }
+  .text-shine {
+    background: linear-gradient(90deg, #0052FF 0%, #00B4FF 50%, #0052FF 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 4s linear infinite;
+  }
+  .grain-bg {
+    background-image: radial-gradient(rgba(0,82,255,0.04) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+}
+
+@layer base {
+  [data-debug-wrapper="true"] { display: contents !important; }
+  [data-debug-wrapper="true"] > * {
+    margin-left: inherit; margin-right: inherit; margin-top: inherit; margin-bottom: inherit;
+    padding-left: inherit; padding-right: inherit; padding-top: inherit; padding-bottom: inherit;
+    column-gap: inherit; row-gap: inherit; gap: inherit;
+    border-left-width: inherit; border-right-width: inherit; border-top-width: inherit; border-bottom-width: inherit;
+    border-left-style: inherit; border-right-style: inherit; border-top-style: inherit; border-bottom-style: inherit;
+    border-left-color: inherit; border-right-color: inherit; border-top-color: inherit; border-bottom-color: inherit;
+  }
+}
+
+/* Custom scrollbar for the vibrant feel */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #F5F8FF; }
+::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #0052FF, #00B4FF); border-radius: 999px; }
